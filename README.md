@@ -1,27 +1,38 @@
 # Anthonyzngweb
+Hello there!
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
+I am excited to introduce my web page to you! This page showcases my past projects and experiences. Additionally, I have created some small tools on the tool page, such as a BMI calculator. I hope you can find some useful tools there.
 
-## Development server
+The first version of this page will be hosted on GitHub and locally. To host this web page on your local or GitHub page, please follow the guidelines below:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+For Local Host:
 
-## Code scaffolding
+   1. Clone this project from Git using the following command:
+   2. git clone https://github.com/anthonyzng/anthonyzngweb.git
+   3. Go to the "anthonyzngweb" directory
+    Install the necessary packages using the following command:
+    npm install
+    (Please ensure that you have already installed node.js and AngularJS in your local environment)
+   4. Host this web page locally using the following command:
+    ng serve
+    (Please make sure that the default port is not being used by any other application. The default port is 4200.)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+For GitHub Page:
 
-## Build
+   1. Clone this project from Git using the following command:
+   2. git clone https://github.com/anthonyzng/anthonyzngweb.git
+   3. Go to the "anthonyzngweb" directory
+    Install the necessary packages using the following command:
+    npm install
+    (Please ensure that you have already installed node.js and AngularJS in your local environment)
+   4. Build this web project using the following command:
+    ng build --output-path ../docs --base-href anthonyzngweb
+   5. Add the "docs" directory to the local Git branch and push it to GitHub using the following commands:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+    5.1 git add ../docs
+    5.2 git commit -m "update / create build angularJS project"
+    5.3 git push
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   6. After completing these steps, go to your current Git repository settings and select the "pages" tag.
+    6.1. Select "Source" -> "Build and deployment" -> "deploy from a branch"
+    6.2. Select "Branch" -> "master" -> "docs" (The branch should follow your current repository branch, and ensure that the "docs" build project directory is correct.)
