@@ -32,7 +32,7 @@ export class AppRoutingModule {
   ) {
     this.matIconRegistry.addSvgIcon(
       'my-icon',
-      this.domSanitizer.bypassSecurityTrustResourceUrl('/assets/c_linkg_pig.svg')
+      this.domSanitizer.bypassSecurityTrustResourceUrl('./assets/c_linkg_pig.svg')
     );
     }
 }
