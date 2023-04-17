@@ -26,13 +26,13 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule {
-  constructor(
-    private matIconRegistry: MatIconRegistry,
-    private domSanitizer: DomSanitizer
-  ) {
-    this.matIconRegistry.addSvgIcon(
-      'my-icon',
-      this.domSanitizer.bypassSecurityTrustResourceUrl('./assets/c_linkg_pig.svg')
-    );
-    }
+  // constructor(
+  //   private matIconRegistry: MatIconRegistry,
+  //   private domSanitizer: DomSanitizer
+  // ) {
+  //   this.matIconRegistry.addSvgIcon(
+  //     'my-icon',
+  //     this.domSanitizer.bypassSecurityTrustResourceUrl('./assets/c_linkg_pig.svg')
+  //   );
+  //   }
 }
