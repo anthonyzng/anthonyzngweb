@@ -13,12 +13,11 @@ import { GameComponent } from './game/game.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
-  {path: '', component: HomeComponent},
   {path: 'cv', component: CvComponent},
   {path: 'project', component: ProjectComponent},
   {path: 'tool', component: ToolsComponent},
   {path: 'game', component: GameComponent},
-  {path: '**', component: NotFoundComponent },
+  {path: '**', component: HomeComponent },
 ];
 
 @NgModule({
