@@ -8,5 +8,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 })
 
 export class FooterComponent {
-
+  openUrl(url : string){
+    window.open(url, '_blank');
+  }
 }

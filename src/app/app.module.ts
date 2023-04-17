@@ -10,6 +10,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ProjectComponent } from './project/project.component';
 import { ToolsComponent } from './tools/tools.component';
 import { FooterComponent } from './footer/footer.component';
+import { GameComponent } from './game/game.component';
 //angular material 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -18,7 +19,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { HttpClientModule } from '@angular/common/http';
-
+import { MatMenuModule } from '@angular/material/menu';
+import { BackgroundComponent } from './background/background.component';
+import {MatCardModule} from '@angular/material/card'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +30,9 @@ import { HttpClientModule } from '@angular/common/http';
     NotFoundComponent,
     ProjectComponent,
     ToolsComponent,
-    FooterComponent
+    FooterComponent,
+    GameComponent,
+    BackgroundComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     MatSidenavModule,
     MatListModule,
-    HttpClientModule
+    HttpClientModule,
+    MatMenuModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

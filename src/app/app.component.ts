@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'anthonyzngweb';
+  scrollToTop(){
+    console.log("clicked");
+    window.scrollTo(0,0);
+  }
 }

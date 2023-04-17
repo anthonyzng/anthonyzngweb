@@ -1,0 +1,49 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.mat-mdc-card-title{
+  font-size: 25px;
+}
+.mat-mdc-card-subtitle{
+  font-size: 20px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+
+.mat-card {
+   /* takes up 60% of available width (100% - 20% - 20%) */
+  margin: 0 20%; /* 20% margin on left and right */
+  padding: 20px;
+  background-color: black;
+  padding: 10%;
+}
+
+.mdc-card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10%;
+}
+
+.mat-mdc-card-subtitle button{
+  margin: 1%;
+}
+.red_icon{
+  color: rgb(224, 73, 73);
+}
+.blue_icon{
+  color: rgb(185, 34, 199);
+}
+.mat-mdc-card-footer button{
+  width : "30"; 
+  margin: 1%;
+}

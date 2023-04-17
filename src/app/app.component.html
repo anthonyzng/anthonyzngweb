@@ -1,34 +1,44 @@
 
 <title>Anthonyz Ng Web</title>
-<mat-toolbar color="primary">
+<app-background>
+</app-background>
+<mat-toolbar>
     <mat-toolbar-row>
       <span>Anthonyz Ng</span>
       <button mat-icon-button (click)="sidenav.toggle()">
-        <mat-icon svgIcon="my-icon" class="icon-large" >menu</mat-icon>
+        <mat-icon svgIcon="my-icon" class="icon-large" ></mat-icon>
       </button>
       <div class="spacer"></div>
+      <div class="navbar-btn">
       <button mat-button routerLink="/home">Home</button>
       <button mat-button routerLink="/cv">CV</button>
       <button mat-button routerLink="/project">Project</button>
-      <button mat-button routerLink="/tool">Tool</button>
+      <button mat-button routerLink="/tool">Tools</button>
       <button mat-button routerLink="/game">Game</button>
+      </div>
     </mat-toolbar-row>
-    </mat-toolbar>
-  
-   <mat-sidenav-container class="bg">
+</mat-toolbar>
+  <mat-sidenav-container>
     <mat-sidenav #sidenav>
       <mat-nav-list>
         <a mat-list-item routerLink="/home">Home</a>
         <a mat-list-item routerLink="/cv">CV</a>
-        <a mat-list-item routerLink="/projects">Project</a>
-        <a mat-list-item routerLink="/tools">Tool</a>
+        <a mat-list-item routerLink="/project">Project</a>
+        <a mat-list-item routerLink="/tool">Tools</a>
         <a mat-list-item routerLink="/game">Game</a>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
+
       <div style="height: 88vh;">
         <router-outlet></router-outlet>
+        <button mat-icon-button (click)="scrollToTop()" class="back-to-top">
+          <span class="material-icons">
+            arrow_upward
+            </span>
+        </button>
       </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
-  <app-footer></app-footer>
+
+<app-footer></app-footer>

@@ -9,12 +9,15 @@ import { ToolsComponent } from './tools/tools.component';
 import { FooterComponent } from './footer/footer.component';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
+import { GameComponent } from './game/game.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
+  {path: '', component: HomeComponent},
   {path: 'cv', component: CvComponent},
   {path: 'project', component: ProjectComponent},
   {path: 'tool', component: ToolsComponent},
+  {path: 'game', component: GameComponent},
   {path: '**', component: NotFoundComponent },
 ];
 
@@ -32,5 +35,4 @@ export class AppRoutingModule {
       this.domSanitizer.bypassSecurityTrustResourceUrl('/assets/c_linkg_pig.svg')
     );
     }
-
 }
