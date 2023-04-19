@@ -1,0 +1,131 @@
+.mat-mdc-card-title{
+  font-size: 25px;
+}
+.mat-mdc-card-subtitle{
+  font-size: 20px;
+}
+
+.mat-card {
+   /* takes up 60% of available width (100% - 20% - 20%) */
+  margin: 0 5%; /* 20% margin on left and right */
+  padding: 20px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+.mdc-card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 15%;
+}
+//button
+
+.btn_img{
+  width: 38px;
+}
+.red_icon{
+  color: rgb(224, 73, 73);
+}
+.mat-mdc-card-subtitle button{
+  margin: 1%;
+}
+.mat-mdc-card-footer button{
+  width : "30"; 
+  margin: 1%;
+}
+.mdc-fab{
+  width: 50px;
+  height: 50px;
+}
+
+.mdc-fab:hover{
+  width: 55px;
+  height: 55px;
+  animation-name:swingIcon ;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes swingIcon {
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(15deg);
+  }
+  100%{
+    transform: rotate(-15deg);
+  }
+}
+
+//header
+.mat-mdc-card-header {
+  display: flex;
+}
+
+//self image
+.mat-mdc-card-image{
+height: 90%;
+width: 90%;
+border: 5px solid rgb(243, 104, 104);
+}
+
+.self_img{
+  width: 500px;
+  background-color: rgb(69, 71, 71);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  animation: img_border 8s ease-in-out infinite;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #2d2e32;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+
+@keyframes img_border {
+  0%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50%{
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+//width 900
+@media (max-width:900px) {
+  .mat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mat-mdc-card-header {
+    flex-direction: column-reverse;
+  }
+  .mat-mdc-card-image{
+    height: 300px;
+    width: 300px;
+    border: 5px solid red;
+    }
+  .self_img{
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    background-color: rgb(69, 71, 71);
+    border-radius: 50%;
+  }
+  .mat-mdc-card-image{
+    height: 90%;
+    width: 90%;
+    border: 5px solid rgb(87, 123, 243);
+  }
+}
