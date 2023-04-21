@@ -1,1 +1,21 @@
-<p>project works!</p>
+<div class="container" id="container">
+<div class="swiper-area">
+    <swiper [config]="config">
+        <ng-template swiperSlide>
+            <div class="swiper-item">
+                <app-about></app-about>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="swiper-item">
+                <app-info></app-info>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="swiper-item">
+                3
+            </div>
+        </ng-template>
+    </swiper>
+</div>
+</div>

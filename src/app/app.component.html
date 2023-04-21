@@ -1,3 +1,4 @@
+<div id="scrollArea" ng-controller="ScrollController">
 <app-background>
 </app-background>
 <mat-toolbar>
@@ -26,16 +27,13 @@
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
-
-      <div style="height: 88vh;">
-        <router-outlet></router-outlet>
+        <router-outlet (activate)="onActivate($event)"></router-outlet>
         <button mat-icon-button (click)="scrollToTop()" class="back-to-top">
           <span class="material-icons">
             arrow_upward
             </span>
         </button>
-      </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
-
 <app-footer></app-footer>
+</div>

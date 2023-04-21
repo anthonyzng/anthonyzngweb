@@ -1,4 +1,13 @@
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+
 .container {
     padding: 2%;
     justify-content: center;
 }
+
+.container .child:not(:last-child) {
+    padding: 2%;
+}
+

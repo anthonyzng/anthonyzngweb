@@ -11,6 +11,9 @@ import { ToolsComponent } from './tools/tools.component';
 import { FooterComponent } from './footer/footer.component';
 import { GameComponent } from './game/game.component';
 import { BackgroundComponent } from './background/background.component';
+import { WorksComponent } from './works/works.component';
+import { HACTLComponent } from './workingExperience/hactl/hactl.component';
+
 //angular material 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -22,7 +25,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
 import {LayoutModule} from '@angular/cdk/layout';
-import { InfoComponent } from './info/info.component'; 
+import { InfoComponent } from './info/info.component';
+import { AboutComponent } from './about/about.component';
+import { SwiperModule } from 'swiper/angular';
+import {MatSliderModule} from '@angular/material/slider';
+import { IVCComponent } from './workingExperience/ivc/ivc.component';
+import { UWEComponent } from './workingExperience/uwe/uwe.component';
+import { MSComponent } from './workingExperience/ms/ms.component';
+import { IVEComponent } from './workingExperience/ive/ive.component';
+
+
 
 
 @NgModule({
@@ -35,7 +47,14 @@ import { InfoComponent } from './info/info.component';
     FooterComponent,
     GameComponent,
     BackgroundComponent,
-    InfoComponent
+    AboutComponent,
+    InfoComponent,
+    WorksComponent,
+    HACTLComponent,
+    IVCComponent,
+    UWEComponent,
+    MSComponent,
+    IVEComponent
   ],
   imports: [
     BrowserModule,
@@ -49,9 +68,14 @@ import { InfoComponent } from './info/info.component';
     HttpClientModule,
     MatMenuModule,
     MatCardModule,
-    LayoutModule
+    LayoutModule,
+    SwiperModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+  
+}
