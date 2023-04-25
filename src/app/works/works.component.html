@@ -1,20 +1,22 @@
 <div class="container" id="container">
-    <h2 class="Workstitle">My Working Experience</h2>
+    <h2 class="Workstitle">My Coding Experience</h2>
+    <div class="swiper-container-wrapper swiper-container-wrapper--timeline">
+        <!-- Timeline -->
+        <ul class="swiper-pagination-custom" #swiperPaginationCustom>
+        <li class='swiper-pagination-switch first active'><span class='switch-title' >2017 - IVE</span></li>
+        <li class='swiper-pagination-switch'><span class='switch-title'>2019 - MS</span></li>
+        <li class='swiper-pagination-switch'><span class='switch-title'>2020 - UWE</span></li>
+        <li class='swiper-pagination-switch'><span class='switch-title'>2021 - IVC</span></li>
+        <li class='swiper-pagination-switch last'><span class='switch-title'>2022 - HACTL</span></li>
+        </ul>
+        <!-- Progressbar -->
+        <div class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal"></div>
+        
     <div class="swiper-area">
-        <swiper [config]="config">
+        <swiper [config]="config" #mySwiper effect="fade" (swiper)="(onSwiper($event))" >
             <ng-template swiperSlide>
                 <div class="swiper-item">
-                    <app-hactl></app-hactl>
-                </div>
-            </ng-template>
-            <ng-template swiperSlide>
-                <div class="swiper-item">
-                    <app-ivc></app-ivc>
-                </div>
-            </ng-template>
-            <ng-template swiperSlide>
-                <div class="swiper-item">
-                    <app-uwe></app-uwe>
+                    <app-ive></app-ive>
                 </div>
             </ng-template>
             <ng-template swiperSlide>
@@ -24,9 +26,20 @@
             </ng-template>
             <ng-template swiperSlide>
                 <div class="swiper-item">
+                    <app-uwe></app-uwe>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div class="swiper-item">
                     <app-ivc></app-ivc>
                 </div>
             </ng-template>
+            <ng-template swiperSlide>
+                <div class="swiper-item">
+                    <app-hactl></app-hactl>
+                </div>
+            </ng-template>
+            <div class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal"></div>
         </swiper>
     </div>
 </div>

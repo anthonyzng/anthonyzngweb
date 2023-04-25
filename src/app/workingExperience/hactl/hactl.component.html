@@ -1,22 +1,28 @@
 <mat-card>
     <mat-card-header>
-        <div class="computers_img"><img mat-card-image src={{computers_img}}></div>
+        <div class="hactl_img"><img mat-card-image src={{hactl_img}}></div>
         <mat-card-title-group>
             <mat-card-title>
-            <h1>About Me :</h1>
+                <button mat-button (click)="openUrl('https://www.hactl.com/')" >
+                    <h1 href="https://www.hactl.com">About HACTL :</h1>
+                </button>
             </mat-card-title>
             <mat-card-subtitle>
-                <h3>My Name is Anthony,I am full stack developer with a passion for creating high-quality applications. With a BSc in Information Technology and several years of experience working for large companies and international software consultants, I have gained expertise in a range of programming languages and technologies(Follow Above Tech Stack List :D).
+                <h3>
+                    Hong Kong Air Cargo Terminals Limited (Hactl) is the leading air cargo terminals in Hong Kong.
                 </h3>
+                <h4>Position : Senior IT Coordinator [From Aug 2021 to Oct 2022]</h4>
+                <h1>Responsibilities & Achievements at this Company : </h1>
                 <br>
-                <h3>I am constantly seeking opportunities to enhance my programming and project management skills, in order to create valuable and innovative applications for people. In my spare time, I also enjoy developing small games and tools for fun and practical purposes.</h3>
-                <br>
-                <h3>Thanks for you reading :D</h3>
+                <ul class="job-duty-text">
+                    <li>Assisted in the development of new functions within larger system applications and ensured smooth operation of application services.</li>
+                    <li>Participated in an application upgrade project that involved revamping the UI framework to popular ones such as AngularJS.</li>
+                    <li>Creating a data platform for analyzing air cargo tonnage, business, and equipment data using Azure Cloud Service, resulting in reduced business operation costs and improved operational quality.</li>
+                </ul>
             </mat-card-subtitle>
         </mat-card-title-group>
     </mat-card-header>
     <mat-card-content>
-
     </mat-card-content>
     <mat-card-footer>
     </mat-card-footer>

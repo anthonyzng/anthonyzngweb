@@ -8,12 +8,12 @@ body { margin: 0;
 .mat-mdc-card{
     margin : 5%;
 }
-
+h1{
+  line-height: 1.2;
+  color: rgb(102, 102, 226);
+}
 .mat-card {
     /* takes up 60% of available width (100% - 20% - 20%) */
-   margin: 0 5%; /* 20% margin on left and right */
-   padding: 20px;
-   background-color: black;
    display: flex;
    flex-direction: row;
  }
@@ -21,7 +21,7 @@ body { margin: 0;
    display: flex;
    flex-direction: column;
    box-sizing: border-box;
-   padding: 15%;
+   padding: 7%;
  }
 
 

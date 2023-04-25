@@ -1,0 +1,28 @@
+.mat-mdc-card-image{
+    width: 550px;
+    height: 450px;
+    border-radius: 10%;
+}
+.ivc_img{
+  margin: 3%;
+}
+.job-duty-text{
+  font-size: large;
+}
+.mdc-button{
+  background-color: rgb(243, 232, 223);
+}
+.mdc-button >h1 {
+  color: aqua;
+}
+
+@media (max-width:800px) {
+  .mat-card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .mat-mdc-card-header {
+      flex-direction: column;
+    }
+}
