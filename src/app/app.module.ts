@@ -33,6 +33,7 @@ import { IVCComponent } from './workingExperience/ivc/ivc.component';
 import { UWEComponent } from './workingExperience/uwe/uwe.component';
 import { MSComponent } from './workingExperience/ms/ms.component';
 import { IVEComponent } from './workingExperience/ive/ive.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 
 
@@ -54,7 +55,8 @@ import { IVEComponent } from './workingExperience/ive/ive.component';
     IVCComponent,
     UWEComponent,
     MSComponent,
-    IVEComponent
+    IVEComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

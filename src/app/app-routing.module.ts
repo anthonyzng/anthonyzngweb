@@ -12,9 +12,9 @@ import { GameComponent } from './game/game.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
-  {path: 'project', component: ProjectComponent},
-  {path: 'tool', component: ToolsComponent},
-  {path: 'game', component: GameComponent},
+  {path: 'projects', component: ProjectComponent},
+  {path: 'tools', component: ToolsComponent},
+  {path: 'games', component: GameComponent},
   {path: '**', component: HomeComponent },
 ];
 
