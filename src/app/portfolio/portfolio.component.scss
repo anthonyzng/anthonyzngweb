@@ -28,11 +28,6 @@
 
 .portfolio{
     margin: 5px;
-    width: 100%;
-}
-
-.portfolio_card{
-
 }
 
 #footer_icon{
@@ -43,9 +38,6 @@
     color: #FF4136;
 }
 
-.mat-mdc-card{
-    width: 100%;
-}
 .mat-mdc-card-image{
     width: 550px;
     height: 450px;
@@ -68,8 +60,8 @@
         flex-direction: column;
     }
     .mat-mdc-card-image{
-        width: 450px;
-        height: 350px;
+        width: 550px;
+        height: 450px;
         border-radius: 10%;
     }
 }
