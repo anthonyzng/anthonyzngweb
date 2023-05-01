@@ -6,17 +6,30 @@
             </mat-card-title>
             <mat-card-subtitle>
                 <h2>I'm a Full Stack Web Developer based in Canada / Hong Kong<mat-icon aria-hidden="false" fontIcon="location_on" class="red_icon"></mat-icon></h2>
-                <button mat-mini-fab color="white" aria-label="GitHub" width = "30" (click)="openUrl('https://github.com/anthonyzng')">
-                    <img class="btn_img" alt="Octicons-mark-github" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/64px-Octicons-mark-github.svg.png">
-                </button>
-                <button mat-mini-fab color="white" aria-label="LinkedIn" width = "30" (click)="openUrl('https://www.linkedin.com/in/anthonyzng')">
+                Contact Me :
+                <button mat-mini-fab color="white" aria-label="LinkedIn" width = "30" (click)="openUrl('https://www.linkedin.com/in/anthonyzng')" class="button-tooltip">
+                    <div class="tooltip" id="icon_contact">
+                        My LinkedIn
+                    </div>
                     <img class="btn_img" alt="Octicons-mark-linkedin" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/64px-LinkedIn_icon_circle.svg.png">
                 </button>
-                <button mat-mini-fab color="white" aria-label="Leetcode" width = "30" (click)="openUrl('https://leetcode.com/anthonyzng075/')">
-                    <img class="btn_img" alt="Octicons-mark-Leetcode" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Leetcode.svg/64px-Leetcode.svg.png">
-                </button>
-                <button mat-mini-fab color="white" aria-label="Email" width = "30" (click)="sendEmail()">
+                <button mat-mini-fab color="white" aria-label="Email" width = "30" (click)="sendEmail()" class="button-tooltip">
+                    <div class="tooltip" id="icon_contact">
+                        My Email
+                    </div>
                     <img class="btn_img" alt="Octicons-mark-Leetcode" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png">
+                </button>
+                <button mat-mini-fab color="white" aria-label="GitHub" width = "30" (click)="openUrl('https://github.com/anthonyzng')" class="button-tooltip">
+                    <div class="tooltip" id="icon_contact">
+                        My Github
+                    </div>
+                    <img class="btn_img" alt="Octicons-mark-github" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/64px-Octicons-mark-github.svg.png">
+                </button>
+                <button mat-mini-fab color="white" aria-label="Leetcode" width = "30" (click)="openUrl('https://leetcode.com/anthonyzng075/')" class="button-tooltip">
+                    <div class="tooltip" id="icon_contact">
+                        My LeetCode
+                    </div>
+                    <img class="btn_img" alt="Octicons-mark-Leetcode" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Leetcode.svg/64px-Leetcode.svg.png">
                 </button>
             </mat-card-subtitle>
         </mat-card-title-group>
