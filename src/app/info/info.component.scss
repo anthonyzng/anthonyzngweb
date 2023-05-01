@@ -75,3 +75,31 @@ border: 5px solid rgb(243, 104, 104);
     border: 5px solid rgb(87, 123, 243);
   }
 }
+
+//text box
+.tooltip {
+  position: absolute;
+  z-index: 1;
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  top: -25px;
+}
+
+.tooltip::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+  top: -25px;
+}
+
+.button-tooltip:hover .tooltip {
+  visibility: visible;
+}

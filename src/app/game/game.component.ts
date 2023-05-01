@@ -6,10 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./game.component.scss']
 })
 export class GameComponent {
-  snake_game_img : string = "./assets/snake_game.png"
-  books_img : string = "./assets/book_fullstack.png";
-  bmi_img : string ="./assets/bmi_tools.png";
+  cardData:CardData[] = [
+    {title:"Snake Game",img:"./assets/snake_game.png",demo_link:"https://anthonyzng.github.io/my-snake-game",code_link:"https://github.com/anthonyzng/my-snake-game",tech:"Tech-stack : AngularCLI"}
+  ]
   openUrl(url : string){
     window.open(url);
   }
+}
+
+export interface CardData{
+  title: string;
+  img: string;
+  demo_link:string;
+  code_link:string;
+  tech:string;
 }

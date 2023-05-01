@@ -1,1 +1,29 @@
-<p>Not yet complete - projects</p>
+<div class="project_titlie">
+    <h2>Projects</h2>
+</div>
+<div class="project_img_container">
+<div class="project_img">
+    <span class="material-icons" id="icon-tools">
+        apps
+    </span>
+</div>
+</div>
+<div class="project_content">
+<mat-card *ngFor="let card of cardData">
+    <mat-card-title-group>
+        <mat-card-title>
+            {{card.title}}
+        </mat-card-title>
+        <mat-card-subtitle>
+            <img mat-card-image src={{card.img}}>
+        </mat-card-subtitle>
+    </mat-card-title-group>
+    <mat-card-content>
+        <p>{{card.tech}}</p>
+    </mat-card-content>
+    <mat-card-footer>
+        <button mat-flat-button color="primary"(click)="openUrl(card.demo_link)">Live Demo <span class="material-icons">preview</span></button>
+        <button mat-flat-button color="warn" (click)="openUrl(card.code_link)" [disabled]="card.code_link ==''">Source Code <span class="material-icons">code</span></button>
+    </mat-card-footer>
+</mat-card>
+</div>
