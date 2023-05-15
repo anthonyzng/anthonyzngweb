@@ -26,3 +26,9 @@
       flex-direction: column;
     }
 }
+@media (max-width:600px) {
+  .mat-mdc-card-image{
+    width: 100%;
+    height: 100%;
+}
+}

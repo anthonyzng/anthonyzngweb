@@ -76,10 +76,20 @@ border: 5px solid rgb(243, 104, 104);
   }
 }
 
+////width 400 for mobile
+@media (max-width:400px) {
+  .mdc-card{
+    padding: 1%;
+  }
+}
+
+
 //text box
+.mdc-fab{
+  z-index: 1;
+}
 .tooltip {
   position: absolute;
-  z-index: 1;
   visibility: hidden;
   background-color: #333;
   color: #fff;

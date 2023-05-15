@@ -59,3 +59,15 @@
         flex-direction: column;
       }
 }
+
+
+@media (max-width:600px) {
+  #computer-img-id{
+    width: 100%;
+    height: 100%;
+  }
+  .computers_img{
+    width: 100%;
+    height: 100%;
+}
+}
