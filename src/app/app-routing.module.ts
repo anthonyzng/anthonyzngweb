@@ -9,19 +9,19 @@ import { FooterComponent } from './footer/footer.component';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { GameComponent } from './game/game.component';
-import { AboutComponent } from './about/about.component'; 
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
-  {path: 'about', component: AboutComponent},
-  {path: 'project', component: ProjectComponent},
-  {path: 'tool', component: ToolsComponent},
-  {path: 'game', component: GameComponent},
+  {path: 'projects', component: ProjectComponent},
+  {path: 'tools', component: ToolsComponent},
+  {path: 'games', component: GameComponent},
   {path: '**', component: HomeComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,
+    {scrollPositionRestoration: 'enabled'}
+    )],
   exports: [RouterModule]
 })
 export class AppRoutingModule {

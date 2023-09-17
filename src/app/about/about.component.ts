@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
-    
+  computers_img : string = "./assets/coding.jpg"
+  my_cats : string = "./assets/mycats.jpg"
 }

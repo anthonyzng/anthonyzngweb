@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, HostListener } from '@angular/core';
+import { ViewportScroller } from "@angular/common";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,8 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'anthonyzngweb';
-  scrollToTop(){
-    console.log("clicked");
-    window.scrollTo(0,0);
+  
+  onActivate(event:any){
+    window.scrollTo(0, 0);
   }
+
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
 }

@@ -1,3 +1,4 @@
+<div id="scrollArea" ng-controller="ScrollController">
 <app-background>
 </app-background>
 <mat-toolbar>
@@ -10,9 +11,9 @@
       <div class="spacer"></div>
       <div class="navbar-btn">
       <button mat-button routerLink="/home">Home</button>
-      <button mat-button routerLink="/project">Project</button>
-      <button mat-button routerLink="/tool">Tools</button>
-      <button mat-button routerLink="/game">Game</button>
+      <button mat-button routerLink="/projects">Project</button>
+      <button mat-button routerLink="/tools">Tools</button>
+      <button mat-button routerLink="/games">Game</button>
       </div>
     </mat-toolbar-row>
 </mat-toolbar>
@@ -20,22 +21,19 @@
     <mat-sidenav #sidenav>
       <mat-nav-list>
         <a mat-list-item routerLink="/home">Home</a>
-        <a mat-list-item routerLink="/project">Project</a>
-        <a mat-list-item routerLink="/tool">Tools</a>
-        <a mat-list-item routerLink="/game">Game</a>
+        <a mat-list-item routerLink="/projects">Project</a>
+        <a mat-list-item routerLink="/tools">Tools</a>
+        <a mat-list-item routerLink="/games">Game</a>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
-
-      <div style="height: 88vh;">
-        <router-outlet></router-outlet>
+        <router-outlet (activate)="onActivate($event)"></router-outlet>
         <button mat-icon-button (click)="scrollToTop()" class="back-to-top">
           <span class="material-icons">
             arrow_upward
             </span>
         </button>
-      </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
-
 <app-footer></app-footer>
+</div>

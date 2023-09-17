@@ -5,60 +5,6 @@
   font-size: 20px;
 }
 
-.mat-card {
-   /* takes up 60% of available width (100% - 20% - 20%) */
-  margin: 0 5%; /* 20% margin on left and right */
-  padding: 20px;
-  background-color: black;
-  display: flex;
-  flex-direction: row;
-}
-.mdc-card {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  padding: 15%;
-}
-//button
-
-.btn_img{
-  width: 38px;
-}
-.red_icon{
-  color: rgb(224, 73, 73);
-}
-.mat-mdc-card-subtitle button{
-  margin: 1%;
-}
-.mat-mdc-card-footer button{
-  width : "30"; 
-  margin: 1%;
-}
-.mdc-fab{
-  width: 50px;
-  height: 50px;
-}
-
-.mdc-fab:hover{
-  width: 55px;
-  height: 55px;
-  animation-name:swingIcon ;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes swingIcon {
-  0%{
-    transform: rotate(0deg);
-  }
-  50%{
-    transform: rotate(15deg);
-  }
-  100%{
-    transform: rotate(-15deg);
-  }
-}
-
 //header
 .mat-mdc-card-header {
   display: flex;
@@ -128,4 +74,46 @@ border: 5px solid rgb(243, 104, 104);
     width: 90%;
     border: 5px solid rgb(87, 123, 243);
   }
+}
+
+////width 400 for mobile
+@media (max-width:400px) {
+  .mdc-card{
+    padding: 1%;
+  }
+}
+
+
+//text box
+.mdc-fab{
+  z-index: 1;
+}
+.tooltip {
+  position: absolute;
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  top: -25px;
+}
+
+.tooltip::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+  top: -25px;
+}
+
+.button-tooltip:hover .tooltip {
+  visibility: visible;
+}
+
+#icon_contact{
+  top: -50px;
 }

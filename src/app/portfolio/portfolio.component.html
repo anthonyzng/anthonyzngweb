@@ -1,0 +1,81 @@
+<mat-card>
+    <mat-card-title-group>
+        <mat-card-title>
+            <h1>My Portfolio</h1>
+        </mat-card-title>
+        <mat-card-subtitle>
+            <div class="imTheLine"></div>
+        </mat-card-subtitle>
+    </mat-card-title-group>
+    <mat-card-content>
+        <div class="portfolio">
+                <h1>Tools</h1>
+                <mat-card id="portfolio_card">
+                    <mat-card-title-group>
+                        <mat-card-title>
+                            BMI Calculator
+                        </mat-card-title>
+                        <mat-card-subtitle>
+                            <div class="snake_game_img"><img mat-card-image src={{bmi_img}}></div>
+                        </mat-card-subtitle>
+                    </mat-card-title-group>
+                    <mat-card-content>
+                        <button mat-flat-button color="primary"(click)="openUrl('https://anthonyzng.github.io/BMI-Calculator/')">Live Demo <span class="material-icons">preview</span></button>
+                        <button mat-flat-button color="warn" (click)="openUrl('https://github.com/anthonyzng/BMI-Calculator')">Source Code <span class="material-icons">code</span></button>
+                    </mat-card-content>
+                    <mat-card-footer>
+                        <p>More Tools</p>
+                        <span class="material-icons"  routerLink="/tools" routerLinkActive="active" ariaCurrentWhenActive="page" id="footer_icon">
+                            construction
+                        </span>
+                    </mat-card-footer>
+                </mat-card>
+        </div>
+        <div class="portfolio">
+            <h1>Projects</h1>
+            <mat-card id="portfolio_card">
+                <mat-card-title-group>
+                    <mat-card-title>
+                        Book System
+                    </mat-card-title>
+                    <mat-card-subtitle>
+                        <div ><img mat-card-image src={{books_img}}></div>
+                    </mat-card-subtitle>
+                </mat-card-title-group>
+                <mat-card-content>
+                    <button mat-flat-button color="primary" (click)="openUrl('https://drive.google.com/file/d/1ZZyOJdGPsz08wsMyhBZlMuWr0ZQNkSYv/view')">Vedio Demo <span class="material-icons">preview</span></button>
+                    <button mat-flat-button color="warn" (click)="openUrl(' ')" disabled="">Source Code <span class="material-icons">code</span></button>
+                </mat-card-content>
+                <mat-card-footer>
+                    <p>More Projects</p>
+                    <span class="material-icons"  routerLink="/projects" routerLinkActive="active" ariaCurrentWhenActive="page" id="footer_icon">
+                        apps
+                    </span>
+                </mat-card-footer>
+            </mat-card>
+        </div>
+        <div class="portfolio">
+            <h1>Games</h1>
+                <mat-card id="portfolio_card">
+                    <mat-card-title-group>
+                        <mat-card-title>
+                            Snake Game
+                        </mat-card-title>
+                        <mat-card-subtitle>
+                            <div><img mat-card-image src={{snake_game_img}}></div>
+                        </mat-card-subtitle>
+                    </mat-card-title-group>
+                    <mat-card-content>
+                        <button mat-flat-button color="primary" (click)="openUrl('https://anthonyzng.github.io/my-snake-game')">Live Demo <span class="material-icons">preview</span></button>
+                        <button mat-flat-button color="warn" (click)="openUrl('https://github.com/anthonyzng/my-snake-game')">Source Code <span class="material-icons">code</span></button>
+                    </mat-card-content>
+                    <mat-card-footer>
+                        <p>More Games</p>
+                        <span class="material-icons"  routerLink="/games" routerLinkActive="active" ariaCurrentWhenActive="page" id="footer_icon">
+                            sports_esports
+                        </span>
+                    </mat-card-footer>
+                </mat-card>
+        </div>
+    </mat-card-content>
+</mat-card>
