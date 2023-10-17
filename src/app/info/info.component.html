@@ -7,140 +7,32 @@
             <mat-card-subtitle>
                 <h2>I'm a Full Stack Web Developer based in Canada / Hong Kong<mat-icon aria-hidden="false" fontIcon="location_on" class="red_icon"></mat-icon></h2>
                 Contact Me :
-                <button mat-mini-fab color="white" aria-label="LinkedIn" width = "30" (click)="openUrl('https://www.linkedin.com/in/anthonyzng')" class="button-tooltip">
+                <button *ngFor="let contact of contact_name;let i = index" mat-mini-fab color="white" attr.aria-label={{contact}} width = "30" (click)="openUrl(contact_links[i])" class="button-tooltip">
                     <div class="tooltip" id="icon_contact">
-                        My LinkedIn
+                        {{contact}}
                     </div>
-                    <img class="btn_img" alt="Octicons-mark-linkedin" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/64px-LinkedIn_icon_circle.svg.png">
+                    <img class="btn_img" alt={{contact}} src={{contact_icon[i]}}>
                 </button>
                 <button mat-mini-fab color="white" aria-label="Email" width = "30" (click)="sendEmail()" class="button-tooltip">
                     <div class="tooltip" id="icon_contact">
                         My Email
                     </div>
-                    <img class="btn_img" alt="Octicons-mark-Leetcode" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png">
-                </button>
-                <button mat-mini-fab color="white" aria-label="Blog" width = "30" (click)="openUrl('https://tungzgg.wordpress.com/')" class="button-tooltip">
-                    <div class="tooltip" id="icon_contact">
-                        My Blog
-                    </div>
-                    <img class="btn_img" alt="Octicons-mark-Leetcode" src="https://tungzgg.files.wordpress.com/2020/11/cropped-57evnur-2.png">
-                </button>
-                <button mat-mini-fab color="white" aria-label="GitHub" width = "30" (click)="openUrl('https://github.com/anthonyzng')" class="button-tooltip">
-                    <div class="tooltip" id="icon_contact">
-                        My Github
-                    </div>
-                    <img class="btn_img" alt="Octicons-mark-github" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/64px-Octicons-mark-github.svg.png">
-                </button>
-                <button mat-mini-fab color="white" aria-label="Leetcode" width = "30" (click)="openUrl('https://leetcode.com/anthonyzng075/')" class="button-tooltip">
-                    <div class="tooltip" id="icon_contact">
-                        My LeetCode
-                    </div>
-                    <img class="btn_img" alt="Octicons-mark-Leetcode" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Leetcode.svg/64px-Leetcode.svg.png">
+                    <img class="btn_img" alt="Octicons-mark-Leetcode" src="./assets/gmail.png">
                 </button>
             </mat-card-subtitle>
         </mat-card-title-group>
-        <div class="self_img"><img mat-card-image src={{self_img}}></div>
+        <div class="self_img"><img mat-card-image src="./assets/self_img.jpg"></div>
     </mat-card-header>
     <mat-card-content>
     </mat-card-content>
     <mat-card-footer>
         <h3>My Skills
         <mat-icon aria-hidden="false" fontIcon="more_vert"></mat-icon> 
-        <button mat-mini-fab color="white" aria-label="HTML5" width = "30" class="button-tooltip">
+        <button *ngFor="let s_name of skill_name;let q = index" mat-mini-fab color="white" attr.aria-label={{s_name}} width = "30" class="button-tooltip">
             <div class="tooltip">
-                HTML5
+                {{s_name}}
             </div>
-            <img width="28" alt="HTML5" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/32px-HTML5_logo_and_wordmark.svg.png">
-        </button>
-        <button mat-mini-fab color="white" aria-label="CSS" width = "30" class="button-tooltip">
-            <div class="tooltip">
-                CSS
-            </div>
-            <img width="28" height = "28" alt="CSS" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/32px-CSS3_logo_and_wordmark.svg.png">
-        </button>
-        <button mat-mini-fab color="white" aria-label="Javascript" width = "30" class="button-tooltip">
-            <div class="tooltip">
-                Javascript
-            </div>
-            <img width="28" height = "28" alt="Javascript" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/32px-Unofficial_JavaScript_logo_2.svg.png">
-        </button>
-        <button mat-mini-fab color="white" aria-label="AngularCLI" width = "30" class="button-tooltip">
-            <div class="tooltip">
-                AngularCLI
-            </div>
-            <img width="28" height = "28" alt="AngularCLI" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1024px-Angular_full_color_logo.svg.png">
-        </button>
-        <button mat-mini-fab color="white" aria-label="NodeJs" width = "30" class="button-tooltip">
-            <div class="tooltip">
-                NodeJs
-            </div>
-            <img width="28" height = "28" alt="NodeJs" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/64px-Node.js_logo.svg.png">
-        </button>
-        <button mat-mini-fab color="white" aria-label="Java" width = "30" class="button-tooltip">
-            <div class="tooltip">
-                Java
-            </div>
-            <img width="28" height = "28" alt="Java" src="https://upload.wikimedia.org/wikipedia/zh/8/88/Java_logo.png">
-        </button>
-        <button mat-mini-fab color="white" aria-label="Kotlin" width = "30" class="button-tooltip">
-            <div class="tooltip">
-                Kotlin
-            </div>
-            <img width="28" height = "28" alt="Kotlin" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kotlin_Icon.svg/64px-Kotlin_Icon.svg.png">
-        </button>
-        <button mat-mini-fab color="white" aria-label="TypeScript" width = "30" class="button-tooltip">
-            <div class="tooltip">
-                TypeScript
-            </div>
-            <img width="28" height = "28" alt="TypeScript" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/64px-Typescript_logo_2020.svg.png">
-        </button>
-        <button mat-mini-fab color="white" aria-label="Python" width = "30" class="button-tooltip">
-            <div class="tooltip">
-                Python
-            </div>
-            <img width="28" height = "28" alt="Python" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/64px-Python-logo-notext.svg.png">
-        </button>
-        <button mat-mini-fab color="white" aria-label="Docker" width = "30" class="button-tooltip">
-            <div class="tooltip">
-                Docker
-            </div>
-            <img width="28" height = "28" alt="Docker" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Docker-svgrepo-com.svg/64px-Docker-svgrepo-com.svg.png">
-        </button>
-        <button mat-mini-fab color="white" aria-label="Kubernetes" width = "30" class="button-tooltip">
-            <div class="tooltip">
-                Kubernetes
-            </div>
-            <img width="28" height = "28" alt="Kubernetes" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/512px-Kubernetes_logo_without_workmark.svg.png">
-        </button>
-        <button mat-mini-fab color="white" aria-label="Azure" width = "30" class="button-tooltip">
-            <div class="tooltip">
-                Azure
-            </div>
-            <img width="28" height = "28" alt="Azure" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/New-azure-logo-square.png/512px-New-azure-logo-square.png">
-        </button>
-        <button mat-mini-fab color="white" aria-label="Git" width = "30" class="button-tooltip">
-            <div class="tooltip">
-                Git
-            </div>
-            <img width="28" height = "28" alt="Git" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Git_format.png/64px-Git_format.png">
-        </button>
-        <button mat-mini-fab color="white" aria-label="Jira" width = "30" class="button-tooltip">
-            <div class="tooltip">
-                Jira
-            </div>
-            <img width="28" height = "28" alt="Jira" src="https://project-management.com/wp-content/uploads/2022/12/atlassian_jira.png">
-        </button>
-        <button mat-mini-fab color="white" aria-label="Jenkins" width = "30" class="button-tooltip">
-            <div class="tooltip">
-                Jenkins
-            </div>
-            <img width="28" height = "28" alt="Jenkins" src="https://www.zend.com/sites/default/files/image/2019-09/logo-jenkins.jpg">
-        </button>
-        <button mat-mini-fab color="white" aria-label="SQL" width = "30" class="button-tooltip">
-            <div class="tooltip">
-                SQL
-            </div>
-            <img width="28" height = "28" alt="SQL" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sql_data_base_with_logo.png/512px-Sql_data_base_with_logo.png">
+            <img width="28" height = "28" alt={{s_name}} src={{skill_icon[q]}}>
         </button>
     </h3> 
     </mat-card-footer>
