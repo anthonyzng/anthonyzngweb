@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./info.component.scss']
 })
 export class InfoComponent {
-  self_img : string = "/src/assets/self.jpg"
+  self_img : string = "./assets/self.jpg"
   //skills list
   skill_name: string[] = ["HTML5","CSS","JavaScript","AngularCLI","Node.js","Java","Kotlin","TypeScript","Python","Docker","Kubernetes","Azure","Git","Jira","Jenkins","SQL"];
   skill_icon : string[] = ["./assets/html5.png","./assets/css3.png","./assets/javascript.png","./assets/angularcli.png","./assets/nodejs.png",
