@@ -10,6 +10,31 @@
   display: flex;
 }
 
+.download{
+  display: inline-block;
+}
+.download:hover{
+  border-radius: 5%;
+  border: 2px solid rgb(82, 228, 179);
+}
+
+.download_icon{
+  animation: download_icon_animation 5s ease-in-out infinite;
+}
+
+@keyframes download_icon_animation {
+  0%{
+    color: #FF4136;
+  }
+  50%{
+    color: #0074D9;
+  }
+  100%{
+    color: #FFDC00;
+  }
+}
+
+
 //self image
 .mat-mdc-card-image{
 height: 90%;
