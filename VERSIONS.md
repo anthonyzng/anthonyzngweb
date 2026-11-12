@@ -19,18 +19,18 @@ Versions are the locked ones where a lockfile exists.
 | Package | Version | Scope |
 |---|---|---|
 | @angular/animations | 15.0.3 | prod |
-| @angular/cdk | 15.2.7 | prod |
+| @angular/cdk | 15.2.9 | prod |
 | @angular/common | 15.0.3 | prod |
 | @angular/compiler | 15.0.3 | prod |
 | @angular/core | 15.0.3 | prod |
 | @angular/forms | 15.0.3 | prod |
-| @angular/material | 15.2.7 | prod |
+| @angular/material | 15.2.9 | prod |
 | @angular/platform-browser | 15.0.3 | prod |
 | @angular/platform-browser-dynamic | 15.0.3 | prod |
 | @angular/router | 15.0.3 | prod |
 | angular-material | 1.2.5 | prod |
 | jquery | 3.6.4 | prod |
-| swiper | 8.4.6 | prod |
+| swiper | 8.4.7 | prod |
 | tslib | 2.4.1 | prod |
 | zone.js | 0.12.0 | prod |
 | @angular-devkit/build-angular | 15.0.3 | dev |
